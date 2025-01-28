@@ -1,1 +1,50 @@
+import React from "react";
+
+const DeepDoge = () => {
+  return (
+    <div className="min-h-screen bg-black text-white p-6">
+      <header className="text-center py-10">
+        <h1 className="text-5xl font-bold text-blue-400">Deep DOGe 🐶🚀</h1>
+        <p className="text-lg text-gray-300 mt-4">
+          The first AI-powered meme coin, fusing DeepSeek AI with the legendary Doge!
+        </p>
+      </header>
+      
+      <section className="text-center py-10">
+        <img
+          src="/deepdoge.png" 
+          alt="Deep DOGe AI" 
+          className="mx-auto w-64 rounded-lg shadow-lg" 
+        />
+      </section>
+      
+      <section className="text-center py-10 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-yellow-400">Why Deep DOGe?</h2>
+        <p className="mt-4 text-gray-300">
+          ✅ AI-enhanced Doge – smarter, faster, and meme-ier than ever!<br/>
+          ✅ Powered by DeepSeek AI – The future of Doge intelligence.<br/>
+          ✅ Community-driven and designed to pump!<br/>
+          ✅ Cyberpunk-inspired design with futuristic vibes.<br/>
+        </p>
+      </section>
+      
+      <section className="text-center py-10 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-green-400">How to Buy</h2>
+        <p className="mt-4 text-gray-300">
+          1️⃣ Connect your Solana wallet 🔗<br/>
+          2️⃣ Head over to Pump.fun 💰<br/>
+          3️⃣ Search for <strong>Deep DOGe (DEEPDOGE)</strong> 🐶<br/>
+          4️⃣ Swap your SOL and join the AI-Doge revolution! 🚀<br/>
+        </p>
+      </section>
+      
+      <footer className="text-center py-10">
+        <p className="text-gray-500">Join the community: <a href="#" className="text-blue-400">Twitter</a> | <a href="#" className="text-blue-400">Telegram</a></p>
+        <p className="mt-4 text-gray-600">&copy; 2025 Deep DOGe. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default DeepDoge;
 

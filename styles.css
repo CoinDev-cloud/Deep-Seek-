@@ -1,0 +1,77 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('deepdoge-logo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+h1 {
+    color: #FFD700; /* Gold color */
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #00FFFF; /* Cyan futuristic text */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    text-align: left;
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00FFFF;
+}

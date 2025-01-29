@@ -1,77 +1,108 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0F172A, #1E293B);
+    color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center;
 }
 
-body {
-    background: url('deepdoge-logo.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
+/* Navigation Bar */
+.navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar h1 {
+    color: #FFD700;
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 20px;
+    background: url('deepdoge-logo.png') no-repeat center center/cover;
 }
 
-.container {
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
 }
 
-h1 {
-    color: #FFD700; /* Gold color */
+.hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    color: #FFD700;
 }
 
-p {
+.hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-img {
-    width: 250px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #00FFFF; /* Cyan futuristic text */
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-ul, ol {
-    text-align: left;
-    margin: 0 auto 20px;
-    max-width: 400px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #bbb;
-}
-
-a {
-    color: #FFD700;
+.cta-button {
+    background: #FFD700;
+    color: black;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 
-a:hover {
-    color: #00FFFF;
+.cta-button:hover {
+    background: #FFC107;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.footer {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
 }

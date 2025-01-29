@@ -1,14 +1,12 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0F172A, #1E293B);
+    font-family: 'Inter', sans-serif;
+    background: #0E0E10;
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,7 +17,7 @@ body {
 }
 
 .navbar h1 {
-    color: #FFD700;
+    color: #E5C100;
     font-size: 1.8rem;
 }
 
@@ -40,17 +38,16 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #FFD700;
+    color: #E5C100;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url('deepdoge-bg.jpg') no-repeat center center/cover;
+    background: #1C1C1F;
 }
 
 .hero-content {
@@ -68,10 +65,9 @@ body {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
 }
 
-/* Hero Text */
 .hero h1 {
     font-size: 4rem;
-    color: #FFD700;
+    color: #E5C100;
 }
 
 .hero p {
@@ -80,9 +76,8 @@ body {
     font-weight: bold;
 }
 
-/* Call-to-Action Button */
 .cta-button {
-    background: #FFD700;
+    background: #E5C100;
     color: black;
     padding: 12px 28px;
     text-decoration: none;
@@ -93,11 +88,10 @@ body {
 }
 
 .cta-button:hover {
-    background: #FFC107;
+    background: #FFD700;
     transform: scale(1.05);
 }
 
-/* Sections */
 .section {
     padding: 80px 20px;
     max-width: 900px;
@@ -112,7 +106,7 @@ body {
 }
 
 .feature {
-    background: rgba(255, 255, 255, 0.1);
+    background: #1C1C1F;
     padding: 25px;
     border-radius: 15px;
     width: 300px;
@@ -123,7 +117,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Community Section */
 .button-group {
     display: flex;
     justify-content: center;
@@ -136,7 +129,6 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;

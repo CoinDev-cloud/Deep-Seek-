@@ -22,16 +22,17 @@ body {
     width: 80px;
     opacity: 0.7;
     transition: transform 0.1s ease-out;
+    z-index: -1; /* Ensure Doge images stay behind other content */
 }
 
+/* Ensure floating Doge images are positioned properly */
 #doge1 { top: 10%; left: 15%; animation: float 5s infinite alternate; }
 #doge2 { top: 50%; left: 70%; animation: float 7s infinite alternate; }
 #doge3 { top: 80%; left: 30%; animation: float 6s infinite alternate; }
 
-/* Animations */
-@keyframes float {
-    from { transform: translateY(0px); }
-    to { transform: translateY(-20px); }
+/* Fix Floating Doge Image Not Loading */
+.floating-doge:not([src]) {
+    display: none; /* Hide broken images */
 }
 
 /* Hero Section */
@@ -44,9 +45,10 @@ body {
     margin-top: 30px;
 }
 
+/* Fix for Button Overlapping Text */
 .hero-content {
     background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
+    padding: 50px; /* Increased padding for better spacing */
     border-radius: 15px;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
@@ -62,6 +64,8 @@ body {
     font-size: 1.2rem;
     border-radius: 50px;
     transition: all 0.3s ease;
+    display: inline-block; /* Ensures it doesn’t overlap */
+    margin-top: 20px; /* Adds space below */
 }
 
 .cta-button:hover {
@@ -71,7 +75,7 @@ body {
 
 /* Sections */
 .section {
-    padding: 80px 20px;
+    padding: 100px 20px; /* Increased padding to prevent overlap */
     max-width: 900px;
     margin: 0 auto;
 }
